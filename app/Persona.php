@@ -14,4 +14,7 @@ class Persona extends Model
         'telefono',
         'email'
     ];
+    public function proveedor(){
+        return $this->hasOne('App\Proveedor');
+    }
 }
